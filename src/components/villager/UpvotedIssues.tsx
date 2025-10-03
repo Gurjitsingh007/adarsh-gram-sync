@@ -4,11 +4,11 @@ import { ThumbsUp } from "lucide-react";
 import { useState } from "react";
 
 const initialIssues = [
-  { id: 1, title: "No doctor at Primary Health Center", category: "🏥 Health", village: "Krishna Nagar", upvotes: 52, userUpvoted: false },
-  { id: 2, title: "Water supply disruption", category: "💧 Water", village: "Rampur", upvotes: 45, userUpvoted: true },
-  { id: 3, title: "Frequent power cuts", category: "⚡ Electricity", village: "Shivpur", upvotes: 32, userUpvoted: false },
-  { id: 4, title: "Damaged main road", category: "🛣️ Road", village: "Ganeshpur", upvotes: 28, userUpvoted: false },
-  { id: 5, title: "School building needs repair", category: "🏫 Education", village: "Mahesh Gram", upvotes: 19, userUpvoted: true },
+  { id: 1, title: "No doctor at Primary Health Center", category: " Health", village: "Krishna Nagar", upvotes: 52, userUpvoted: false },
+  { id: 2, title: "Water supply disruption", category: " Water", village: "Rampur", upvotes: 45, userUpvoted: true },
+  { id: 3, title: "Frequent power cuts", category: " Electricity", village: "Shivpur", upvotes: 32, userUpvoted: false },
+  { id: 4, title: "Damaged main road", category: " Road", village: "Ganeshpur", upvotes: 28, userUpvoted: false },
+  { id: 5, title: "School building needs repair", category: " Education", village: "Mahesh Gram", upvotes: 19, userUpvoted: true },
 ];
 
 export function UpvotedIssues() {
