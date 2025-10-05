@@ -75,10 +75,38 @@ export function AdminSidebar() {
         </SidebarGroup>
         
       </SidebarContent>
-       <button className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground transition-all w-full mt-4">
+       {/* <button className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground transition-all w-full mt-4">
         <LogOut className="w-5 h-5" />
         Logout
-      </button>
+      </button> */}
+
+      {/* Bottom Logout Button */}
+<div className="p-4 border-t border-muted">
+  <button
+    className={`group w-full flex items-center gap-2 px-4 py-2 rounded-xl 
+    transition-all duration-200 font-medium
+    ${
+      open
+        ? "bg-red-600 text-white hover:bg-red-700 justify-center"
+        : "bg-transparent hover:bg-red-100 text-red-600 justify-center"
+    }`}
+  >
+    {/* Show logout arrow icon always */}
+    <LogOut
+      className={`w-5 h-5 ${
+        open ? "text-white" : "text-red-600 group-hover:text-red-700"
+      }`}
+    />
+
+    {/* Show text only when sidebar expanded */}
+    {open && <span>Logout</span>}
+
+    {/* When collapsed, show a visible small arrow indicator */}
+    {!open && <span className="text-red-600 text-lg left-margin--5">[↩] </span>}
+  </button>
+</div>
+
+
     </Sidebar>
   );
 }
