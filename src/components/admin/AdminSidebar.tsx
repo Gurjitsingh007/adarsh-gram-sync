@@ -8,6 +8,7 @@ import {
   Bell,
   Settings,
   MapPin,
+  LogOut,
 } from "lucide-react";
 import {
   Sidebar,
@@ -72,7 +73,12 @@ export function AdminSidebar() {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+        
       </SidebarContent>
+       <button className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-muted-foreground hover:bg-muted hover:text-foreground transition-all w-full mt-4">
+        <LogOut className="w-5 h-5" />
+        Logout
+      </button>
     </Sidebar>
   );
 }

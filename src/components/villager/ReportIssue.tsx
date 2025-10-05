@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Droplet, Zap, Heart, GraduationCap, Wifi, Construction } from "lucide-react";
+import { Droplet, Zap, Heart, GraduationCap, Wifi, Construction, Brush,} from "lucide-react";
 
 const categories = [
   { id: "water", icon: Droplet, label: "पानी / Water", color: "text-blue-500" },
@@ -14,6 +14,7 @@ const categories = [
   { id: "education", icon: GraduationCap, label: "शिक्षा / Education", color: "text-purple-500" },
   { id: "connectivity", icon: Wifi, label: "कनेक्टिविटी / Connectivity", color: "text-indigo-500" },
   { id: "road", icon: Construction, label: "सड़क / Road", color: "text-orange-500" },
+  { id: "sanitation", icon: Brush, label: "स्वच्छता / Sanitation", color: "text-green-500" },
 ];
 
 export function ReportIssue() {
@@ -67,11 +68,18 @@ export function ReportIssue() {
                 <Input id="phone" type="tel" placeholder="Enter phone number" required />
               </div>
             </div>
+          <div className="grid md:grid-cols-2 gap-4"> 
 
             <div className="space-y-2">
               <Label htmlFor="village">गांव / Village *</Label>
               <Input id="village" placeholder="Enter village name" required />
             </div>
+
+            <div className="space-y-2">
+              <Label htmlFor="district">जिला / District *</Label>
+              <Input id="district" placeholder="Enter District name" required />
+            </div>
+          </div> 
 
             <div className="space-y-2">
               <Label htmlFor="description">विवरण / Description *</Label>
@@ -85,7 +93,7 @@ export function ReportIssue() {
 
             <div className="space-y-2">
               <Label htmlFor="photo">फोटो / Photo</Label>
-              <Input id="photo" type="file" accept="image/*" />
+              <Input id="photo" type="file" accept="image/video*" />
               <p className="text-sm text-muted-foreground">Upload a photo of the issue (optional)</p>
             </div>
 

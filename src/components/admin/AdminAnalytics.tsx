@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, LineChart, Line } from "recharts";
 
 const categoryData = [
-  { name: "Water", issues: 10 },
+  { name: "Water", issues: 12 },
   { name: "Electricity", issues: 8 },
   { name: "Health", issues: 5 },
   { name: "Education", issues: 4 },
@@ -11,7 +11,7 @@ const categoryData = [
 ];
 
 const villageData = [
-  { name: "Rampur", score: 85 },
+  { name: "Rampur", score: 84 },
   { name: "Shivpur", score: 72 },
   { name: "Ganeshpur", score: 90 },
   { name: "Krishna Nagar", score: 68 },
